@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avish&CO</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/hJYfyxgN/14d1f5ae-bb16-4945-baf5-07465bc1e79a.png">
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        a{
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightyellow;
+            color: black;
+            padding: 5px 10px;
+            text-decoration: none;
+            transition: 500ms;
+        }
+        a:hover{
+            transition: 500ms;
+            transform: scale(1.05);
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        #oferte{
+            border: 5px solid black;
+            border-radius: 15px;
+            max-width: 500px;
+            background-color: lightyellow;
+            color: darkred;
+            padding: 0px 10px;
+            transition: 500ms;
+        }
+        #oferte:hover{
+            transition: 500ms;
+            transform: scale(1.05);
+            background-color: rgb(50, 139, 168);
+            color: darkslategrey;
+            border: 5px solid black;
+        }
+        #echipa{
+            border: 5px solid black;
+            border-radius: 15px;
+            max-width: 500px;
+            background-color: lightyellow;
+            color: darkred;
+            transition: 500ms;
+        }
+        #echipa:hover{
+            transition: 500ms;
+            transform: scale(1.05);
+            background-color: rgb(50, 139, 168);
+            color: darkslategrey;
+            border: 5px solid black;
+        }
+        #cautare{
+            border: 3px solid black;
+            border-radius: 15px;
+            color: darkblue;
+        }
+        #info{
+            border: 5px solid black;
+            border-radius: 15px;
+            max-width: 300px;
+            background-color: lightyellow;
+            color: darkred;
+            transition: 500ms;
+        }
+        #info:hover{
+            transition: 500ms;
+            transform: scale(1.05);
+            background-color: rgb(50, 139, 168);
+            color: darkslategrey;
+            border: 5px solid black;
+        }
+        footer{
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: rgb(201, 86, 86);
+        }
+        #slogan_div{
+            border: 5px solid darkred;
+            margin-top: 10px;
+            border-radius: 15px;
+            max-width: 600px;
+            padding: 6px 10px;
+            background-color: rgb(50, 139, 168);
+            color: darkslategrey;
+            transition: 500ms;
+        }
+        #slogan_div:hover{
+            transition: 500ms;
+            transform: scale(1.05);
+            background-color: lightyellow;
+            color: darkred;
+            border: 5px solid black;
+        }
+        button{
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: red;
+            padding: 5px 5px;
+            transition: 500ms;
+        }
+        button:hover{
+            transition: 500ms;
+            transform: scale(1.05);
+        }
+        .container{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .container img{
+            border-radius: 20px;
+            margin-right: 100px;
+            width: 100px;
+        }
+        a{
+           margin-right: 10px;
+           max-width: 100px; 
+        }
+    </style>
+</head>
+<body style="background-color: aliceblue;">
+<div class="container">
+    <img src="https://i.ibb.co/hJYfyxgN/14d1f5ae-bb16-4945-baf5-07465bc1e79a.png" alt="Logo-ul companiei noastre" width="150px">
+    <a href="#oferte">Oferte</a>
+    <a href="#echipa">Echipa noastra</a>
+    <a href="#footer_b">Copyright</a>
+</div>
+<br>
+<center>
+    <label for="text">Zboruri:</label>
+    <input type="text" id="cautare" placeholder="Cautare:">
+    <button onclick="checkCautare()">Cauta</button>
+</center>
+<center>
+    <div id="slogan_div">
+        <h2>Vrei cea mai sigura modalitate de a zbura in alte tari?</h2>
+        <h2>Avish&CO este aici - la dispozitia ta mereu!</h2>
+    </div>
+</center>
+<br>
+<center><p><i><b>Avish&CO este o companie de turism bazata pe siguranta si confortul pasagerilor. Cu Avish&CO poti zbura in peste 50 de tari cu 30+ companii de aviatie, inclusiv si zboruri speciale cu avionul nostru. Noi suntem aici sa iti usuram zborul si sa iti oferim un timp placut. Avish&CO - zborul tau, pasiunea noastra!</b></i></p></center>
+<center><button onclick="alert('Compania noastra a fost creata de Costandoi Ion. La crearea companiei au mai contribuit: Botnari Andrian, Caraja Iness, Dugan Daniel si Fineti Elena.')">... mai multe</button></center>
+<br>
+<center>
+    <div id="oferte">
+        <h2>Ofertele anului 2026:</h2>
+        <p>1. Islanda: AvishAir - 500$/pers</p>
+        <p>2. Turcia: Anadolujet - 150$/pers</p>
+        <p>3. Grecia: Join UP - 150$/pers</p>
+        <p>4. SUA: Turkish Airlines - 650$/pers</p>
+    </div>
+    <br>
+    <button onclick="buyTicket()">Cumpara un bilet</button>
+    <br>
+    <br>
+    <br>
+    <div id="echipa">
+        <h2>Echipa noastra:</h2>
+        <p>Costandoi Ion - Manager, Coordonator, Specialist</p>
+        <p>Caraja Iness - Instigator, Creator</p>
+        <p>Botnari Andrian - Evaluator</p>
+        <p>Dugan Daniel - Muncitor in echipa</p>
+        <p>Fineti Elena - Muncitor in echipa</p>
+    </div>
+</center>
+<br>
+<br>
+<center><h2>Informatii:</h2></center>
+<center>
+    <div id="info">
+        <p><i><b>Contacte:</b></i> 078631755</p>
+        <p><i><b>Adresa:</b></i> str.Alba-Iulia 26/2</p>
+        <p><i><b>G-mail:</b></i> avishair@gmail.com</p>
+    </div>
+</center>
+<center><h1>Multumim pentru incredere!</h1></center>
+<footer id="footer_b">
+    <center><p><b><i>©2026 Avish SRL. Toate drepturile rezervate.</i></b></p></center>
+</footer>
+<script>
+    alert('Acceptati setarile de confidentialitate?')
+    function checkCautare() {
+        const searchTerm = document.getElementById('cautare').value;
+        if(searchTerm.includes('turcia')){
+            alert('Turcia: 22 zboruri disponibile.')
+            alert('Companii: Turkish Airlines, Pegasus, JoinUP')
+        }
+        else if(searchTerm.includes('sua')){
+            alert('SUA: 6 zboruri disponibile.')
+            alert('Companii: Turkish Airlines, AvishAir')
+        }
+        else if(searchTerm.includes('anglia')){
+            alert('Anglia: 8 zboruri disponibile.')
+            alert('Companii: Wizz Air, JoinUP, Ryanair.')
+        }
+        else if(searchTerm.includes('grecia')){
+            alert('Grecia: 20 zboruri disponibile.')
+            alert('Companii: Anadolujet, JoinUP, ')
+        }
+        else if(searchTerm === ""){
+            alert('Scrieti ceva inainte sa cautati!')
+        }
+        else{
+            alert('In acest moment, nu putem procesa cautarea dumnevoastra.')
+        }
+    }
+    function buyTicket(){
+        const userNr = prompt('Va rugam sa introduceti numarul de telefon.')
+        if(userNr === null || userNr === ""){
+            alert('Va rugam sa completati spatiul cu informatia necesara.')
+        }
+        else{
+            alert(`Date inregistrate: ${userNr}. Veti primi un SMS in care sa introduceti datele pentru a procura bilet.`)
+        }
+    }
+</script>
+</body>
+</html>
